@@ -3,6 +3,10 @@
 // Main activity
 $(document).ready(function () {
     readJSON("Spanish");
+    setCarouselSize();
+    $(window).resize(function () {
+        setCarouselSize();
+    })
 });
 
 // Functions
@@ -10,6 +14,7 @@ function readJSON(language) {
     $.getJSON("https://raw.githubusercontent.com/AlvaroCabreraFBM/Shelf-fi_Audio/master/data/index.json", function (data) {
         console.log("readJSON say: Funciona!");
         setContent(data, language);
+
     });
 }
 
@@ -24,3 +29,12 @@ function setContent(data, language) {
         }
     });
 };
+
+function setCarouselSize() {
+    $("#carousel").css("width", $(window).width());
+    $("#carousel").css("height", "500px");
+    $(".carousel-item").css("width", $(window).width());
+    $(".carousel-item").css("height", "500px");
+    $(".carousel-image").css("width", $(window).width());
+    $(".carousel-image").css("height", "500px");
+}
