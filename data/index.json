@@ -1,0 +1,16 @@
+[
+	{
+		"language": "Spanish",
+		"home": "Inicio",
+		"products": "Productos",
+		"aboutus": "Conocenos",
+		"contactus": "Contactanos"
+	},
+	{
+		"language": "English",
+		"home": "Home",
+		"products": "Products",
+		"aboutus": "About us",
+		"contactus": "Contact us"
+	}
+]
