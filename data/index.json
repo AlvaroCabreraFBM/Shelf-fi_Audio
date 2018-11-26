@@ -2,15 +2,17 @@
 	{
 		"language": "Spanish",
 		"home": "Inicio",
-		"products": "Productos",
-		"aboutus": "Conocenos",
-		"contactus": "Contactanos"
+		"products": "Nuestros productos",
+		"aboutus": "Filosofia de la marca",
+		"contactus": "Contactanos",
+		"faq": "FAQ"
 	},
 	{
 		"language": "English",
 		"home": "Home",
-		"products": "Products",
-		"aboutus": "About us",
-		"contactus": "Contact us"
+		"products": "Our products",
+		"aboutus": "Filosofy",
+		"contactus": "Contact us",
+		"faq": "FAQ"
 	}
 ]
