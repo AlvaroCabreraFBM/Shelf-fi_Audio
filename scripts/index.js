@@ -6,20 +6,21 @@ $(document).ready(function () {
 });
 
 // Functions
-function readJSON() {
-    $.getJSON("./data/index.json", function (data) {
+function readJSON(language) {
+    $.getJSON("https://raw.githubusercontent.com/AlvaroCabreraFBM/Shelf-fi_Audio/master/data/index.json", function (data) {
         console.log("readJSON say: Funciona!");
-        setContent(data, languaje);
+        setContent(data, language);
     });
 }
 
 function setContent(data, language) {
     $.each(data, function (i, item) {
-        if (item.languaje == language) {
-            $("#nav-item-home").append(item.home);
-            $("#nav-item-products").append(item.products);
-            $("#nav-item-aboutus").append(item.aboutus);
-            $("#nav-item-contactus").append(item.contactus);
+        if (item.language == language) {
+            $("#nav-home").text(item.home);
+            $("#nav-products").text(item.products);
+            $("#nav-aboutus").text(item.aboutus);
+            $("#nav-contactus").text(item.contactus);
+            $("#nav-faq").text(item.faq);
         }
     });
 };
