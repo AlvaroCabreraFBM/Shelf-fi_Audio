@@ -1,0 +1,20 @@
+[
+	{
+		"language": "Spanish",
+		"home": "Inicio",
+		"products": "Nuestros productos",
+		"aboutus": "Filosofia de la marca",
+		"contactus": "Contactanos",
+		"faq": "FAQ",
+		"gallery": "Galeria"
+	},
+	{
+		"language": "English",
+		"home": "Home",
+		"products": "Our products",
+		"aboutus": "Filosofy",
+		"contactus": "Contact us",
+		"faq": "FAQ",
+		"gallery": "Gallery"
+	}
+]
