@@ -2,11 +2,25 @@
 
 // Main activity
 $(document).ready(function () {
+
+    // Focus point call
+    $('.focuspoint').focusPoint();
+
+    // Set page language
     readJSON("Spanish");
+
+    // Set carousel size
     setCarouselSize();
+
+    // Set carousel images size
+    $(".carousel-image").css("width", "1920px");
+    $(".carousel-image").css("height", "1200px");
+
+    // Change carousel size when user resize the window
     $(window).resize(function () {
         setCarouselSize();
-    })
+    });
+
 });
 
 // Functions
@@ -32,9 +46,7 @@ function setContent(data, language) {
 
 function setCarouselSize() {
     $("#carousel").css("width", $(window).width());
-    $("#carousel").css("height", "500px");
+    $("#carousel").css("height", "600px");
     $(".carousel-item").css("width", $(window).width());
-    $(".carousel-item").css("height", "500px");
-    $(".carousel-image").css("width", $(window).width());
-    $(".carousel-image").css("height", "500px");
+    $(".carousel-item").css("height", "600px");
 }
