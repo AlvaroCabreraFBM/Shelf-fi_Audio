@@ -2,8 +2,11 @@
 	{
 		"language": "Spanish",
 		"home": "Inicio",
-		"products": "Nuestros productos",
-		"aboutus": "Filosofia de la marca",
+		"products": "Productos",
+		"A-1": "A-1 Amplificador",
+		"P-1": "P-1 Selector/preamplificador",
+		"B-1": "B-1 Fuente alimentación a bateria",
+		"aboutus": "Filosofia",
 		"contactus": "Contactanos",
 		"faq": "FAQ",
 		"gallery": "Galeria"
@@ -11,7 +14,10 @@
 	{
 		"language": "English",
 		"home": "Home",
-		"products": "Our products",
+		"products": "Products",
+		"A-1": "A-1 Amplifier",
+		"P-1": "P-1 Input Selector",
+		"B-1": "B-1 Battery Power Supply",
 		"aboutus": "Filosofy",
 		"contactus": "Contact us",
 		"faq": "FAQ",
