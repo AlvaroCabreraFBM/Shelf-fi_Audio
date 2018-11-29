@@ -2,7 +2,14 @@
 
 // Main activity
 $(document).ready(function () {
+
+    // Language selector
     readJSON("Spanish");
+
+    // Navbar top
+    $("#navbar-top").css("height", $("#navbar").css("height"));
+    $("#navbar-top").css("padding", $("#navbar").css("padding"));
+
 });
 
 // Functions
@@ -19,6 +26,9 @@ function setContent(data, language) {
         if (item.language == language) {
             $("#nav-home").text(item.home);
             $("#nav-products").text(item.products);
+            $("#nav-products-A1").text(item.A1);
+            $("#nav-products-P1").text(item.P1);
+            $("#nav-products-B1").text(item.B1);
             $("#nav-aboutus").text(item.aboutus);
             $("#nav-contactus").text(item.contactus);
             $("#nav-faq").text(item.faq);

@@ -10,25 +10,33 @@ html, body {
     background-color: black;
 }
 
-#navbar-button, .nav-item {
+#navbar-button {
     margin: 0px 0px 0px 20px; 
 }
 
-#navbar-tittle {
-    margin: 0px 40px 0px 0px;
+.nav-item {
+    margin: 0px 20px 0px 0px; 
 }
 
-@media screen and (max-width: 575px){
+#navbar-tittle {
+    font-size: 200%;
+    margin: 0px 100px 0px 0px;
+}
+
+@media screen and (max-width : 990px){
+    #navbar-tittle {
+        margin: 0px 50px 0px 0px;
+    }
 	#navbar-content {
-        margin: 30px 0px 0px 0px;
+        margin: 0px 200px 0px 0px !important;
     }  
 }
 
 @media screen and (min-width: 576px){
 	#navbar-content {
-        margin: 0px 0px 0px 20%;
+        margin: 0px 0px 0px 0px;
     }  
-}
+} 
 
 #products-dropdown {
     position: relative;
@@ -58,4 +66,75 @@ html, body {
 
 .products-item:hover {
     color:lightgrey;
+}
+
+#navbar-top {
+    background-color: brown;
+}
+
+/* Footer */ 
+#footer {
+    background-color: black;
+    color:gray;
+}
+
+#social-net {
+    padding: 40px 0px 40px 0px;
+}
+
+.social-net {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0px 20px 0px 0px;
+    color:white;
+    font-size: 125%;
+    text-decoration: none !important;
+}
+
+#social-net-twitter {
+    background-color: #1DA1F2;
+}
+
+#social-net-facebook {
+    background-color: #4267B2;
+}
+
+#social-net-instagram {
+    background-color: #E53E53;
+}
+
+#social-net-instagram {
+    font-size: 135%; 
+}
+
+#social-net-twitter:hover {
+    background-color: #116193;
+    color: #9B9B9B;
+}
+
+#social-net-facebook:hover {
+    background-color: #283E6C;
+    color: #9B9B9B;
+}
+
+#social-net-instagram:hover {
+    background-color: #8B2532;
+    color: #9B9B9B;
+}
+
+#social-net-twitter:hover a {
+    color: #9B9B9B;
+}
+
+#social-net-facebook:hover a {
+    color: #9B9B9B;
+}
+
+#social-net-instagram:hover .fa-instagram {
+    color: #9B9B9B;
+}
+
+#copyright-name {
+    color:white;
 }
