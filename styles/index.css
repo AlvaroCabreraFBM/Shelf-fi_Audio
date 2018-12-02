@@ -1,0 +1,11 @@
+/* Welcome */
+#content {
+    background-color: #1F1F1F;
+}
+
+#welcome {
+    padding: 55px 0px 40px 0px;
+    min-height: 620px;
+    color: #E5E5E5;
+    text-align: justify;
+}

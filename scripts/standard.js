@@ -1,10 +1,14 @@
 // Variables
+var language = "Spanish";
+var spanish_flag = "url('sources/images/flags/flags.png') 0 0";
+var english_flag = "url('sources/images/flags/flags.png') 0 -20px";
 
 // Main activity
 $(document).ready(function () {
 
     // Language selector
-    readJSON("Spanish");
+    readJSON(language);
+    $("#flag").click(function() {selectLanguage();});
 
     // Navbar top
     $("#navbar-top").css("height", $("#navbar").css("height"));
@@ -15,7 +19,6 @@ $(document).ready(function () {
 // Functions
 function readJSON(language) {
     $.getJSON("https://raw.githubusercontent.com/AlvaroCabreraFBM/Shelf-fi_Audio/master/data/standard.json", function (data) {
-        console.log("readJSON say: Funciona!");
         setContent(data, language);
 
     });
@@ -33,6 +36,20 @@ function setContent(data, language) {
             $("#nav-contactus").text(item.contactus);
             $("#nav-faq").text(item.faq);
             $("#nav-gallery").text(item.gallery);
+            $("#footer-follow").text(item.follow);
+            $("#foter-copyright").text(item.copyright);
         }
     });
 };
+
+// Language Selector
+function selectLanguage() {
+    if (language == "Spanish") {
+        language = "English";
+        $("#flag").css("background", english_flag);
+    } else { 
+        language = "Spanish";
+        $("#flag").css("background", spanish_flag);
+    }
+    readJSON(language);
+}
