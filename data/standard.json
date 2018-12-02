@@ -9,7 +9,9 @@
 		"aboutus": "Filosofia",
 		"contactus": "Contactanos",
 		"faq": "FAQ",
-		"gallery": "Galeria"
+		"gallery": "Galeria",
+		"follow" : "Siguenos en nuestras redes sociales : ",
+		"copyright" : "© 2018 | Todos los derechos reservados."
 	},
 	{
 		"language": "English",
@@ -21,6 +23,8 @@
 		"aboutus": "Filosofy",
 		"contactus": "Contact us",
 		"faq": "FAQ",
-		"gallery": "Gallery"
+		"gallery": "Gallery",
+		"follow" : "Follow us on : ",
+		"copyright" : "© 2018 | All rights reserved."
 	}
 ]
