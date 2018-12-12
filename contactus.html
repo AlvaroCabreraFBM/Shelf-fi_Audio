@@ -35,7 +35,8 @@
     <link rel="stylesheet" href="styles/social-networks.css" />
 
     <!-- Scripts -->
-    <script src="scripts/frame.js"></script>
+    <script src="node_modules/nodemailer/lib/nodemailer.js"></script>
+    <script src="scripts/contactus.js"></script>
 
 </head>
 
@@ -60,7 +61,7 @@
             <ul class="navbar-nav">
 
                 <!-- Home -->
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">Inicio</a>
                 </li>
 
@@ -87,7 +88,7 @@
                 </li>
 
                 <!-- Contactus -->
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="contactus.html">Contactanos</a>
                 </li>
 
@@ -121,6 +122,7 @@
                 </div>
             </div>
 
+            <!-- Mesage -->
             <div class="row">
                 <div class="col-12 pb-3">
                     <div class="d-flex align-items-center justify-content-center">
@@ -138,33 +140,35 @@
             <div class="row">
                 <div class="col-12">
 
+                    <!-- Form -->
                     <form>
 
+                        <!-- First Name -->
                         <div class="form-group row">
-                            <label for="firstname" class="col-md-2 col-form-label color-E5E5E5">First Name</label>
+                            <label for="firstname" class="col-md-2 col-form-label color-E5E5E5">Nombre</label>
                             <div class="col-md-10">
-                                <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                                <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Nombre">
                             </div>
                         </div>
+
                         <div class="form-group row">
-                            <label for="lastname" class="col-md-2 col-form-label color-E5E5E5">Last Name</label>
+                            <label for="lastname" class="col-md-2 col-form-label color-E5E5E5">Apellidos</label>
                             <div class="col-md-10">
-                                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Apellidos">
                             </div>
                         </div>
+
                         <div class="form-group row">
-                            <label for="telnum" class="col-12 col-md-2 col-form-label color-E5E5E5">Contact Tel.</label>
-                            <div class="col-5 col-md-3">
-                                <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area code">
-                            </div>
-                            <div class="col-7 col-md-7">
-                                <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. number">
+                            <label for="telnum" class="col-12 col-md-2 col-form-label color-E5E5E5">Telefono</label>
+                            <div class="col-12 col-md-10">
+                                <input type="tel" class="form-control" id="telephone" name="telnum" placeholder="Numero de telefono">
                             </div>
                         </div>
+
                         <div class="form-group row">
-                            <label for="emailid" class="col-md-2 col-form-label color-E5E5E5">Email</label>
+                            <label for="email" class="col-md-2 col-form-label color-E5E5E5">Email</label>
                             <div class="col-md-10">
-                                <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
                             </div>
                         </div>
 
@@ -179,21 +183,21 @@
 
                             </label>
 
-                            <div class="col-md-2">
+                            <div class="col-6 col-md-2">
                                 <div class="d-flex align-items-center justify-content-center">
                                     <div class="form-radio pt-2">
-                                        <input type="radio" class="form-radio-input" name="approve" id="approve" value="">
+                                        <input type="radio" class="form-radio-input" name="approve" id="contactYes" value="">
                                         <label class="form-check-label" for="approve">
-                                            <p class="color-E5E5E5"><strong>Yes</strong></p>
+                                            <p class="color-E5E5E5"><strong>Si</strong></p>
                                         </label>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-2">
+                            <div class="col-6 col-md-2">
                                 <div class="d-flex align-items-center justify-content-center">
                                     <div class="form-radio pt-2">
-                                        <input type="radio" class="form-radio-input" name="approve" id="approve" value="">
+                                        <input type="radio" class="form-radio-input" name="approve" id="contactNo" value="">
                                         <label class="form-check-label" for="approve">
                                             <p class="color-E5E5E5"><strong>No</strong></p>
                                         </label>
@@ -202,7 +206,7 @@
                             </div>
 
                             <div class="col-md-6">
-                                <select class="form-control">
+                                <select class="form-control" id="contactMethod">
                                     <option>Tel.</option>
                                     <option>Email</option>
                                 </select>
@@ -232,7 +236,7 @@
                             <div class=" col-md-12">
                                 <div class="d-flex align-items-center justify-content-center">
 
-                                    <button type="submit" class="btn btn-primary">Send Feedback</button>
+                                    <button type="submit" id="submit" class="btn btn-primary background-171717 color-E5E5E5 hover-background-101010" style="border-width: 0">Enviar</button>
 
                                 </div>
                             </div>

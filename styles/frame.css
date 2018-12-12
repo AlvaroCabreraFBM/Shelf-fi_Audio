@@ -24,10 +24,6 @@ html, body {
     margin: 0px 10px 0px 10px;
 }
 
-.active {
-    color: #E5E5E5 !important;
-}
-
 .nav-link {
     color: #BFBFBF !important;
 }
@@ -45,6 +41,10 @@ html, body {
 .dropdown-item {
     background-color: #171717;
     color: #BFBFBF !important;
+}
+
+.active a {
+    color: #E5E5E5 !important;
 }
 
 .dropdown-item:hover {
@@ -82,6 +82,10 @@ html, body {
 
 .background-171717 {
     background-color: #171717;
+}
+
+.hover-background-101010 {
+    background-color: #101010 !important;
 }
 
 .background-404040 {
