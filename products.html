@@ -1,0 +1,802 @@
+<!DOCTYPE htmL>
+
+<html>
+
+<head>
+
+    <!-- Charset -->
+    <meta charset="utf-8">
+
+    <!-- Page Info -->
+    <title>Shelf-fi Audio</title>
+    <meta name="description" content="Estás a punto de descubrir una gama de productos de audio concebidos de manera muy diferente al la mayoría de los productos de la industria audiovisual. Nuestra meta es la música y la reproducción óptima del sonido, si, pero sin olvidar aspectos como la simplicidad, la integración en el entorno domestico, la eficiencia y el respeto por el medio ambiente.">
+    <!-- <link rel="icon" href="sources/images/icons/logo.ico"> -->
+
+    <!-- Share info -->
+    <meta property="og:site_name" content="Shelf-fi Audio">
+    <meta property="og:url" content="#">
+    <meta property="og:title" content="Shelf-fi Audio">
+    <meta property="og:image" content="#">
+    <meta property="og:description" content="Estás a punto de descubrir una gama de productos de audio concebidos de manera muy diferente al la mayoría de los productos de la industria audiovisual. Nuestra meta es la música y la reproducción óptima del sonido, si, pero sin olvidar aspectos como la simplicidad, la integración en el entorno domestico, la eficiencia y el respeto por el medio ambiente.">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/frame.css" />
+    <link rel="stylesheet" href="styles/social-networks.css" />
+    <link rel="stylesheet" href="styles/products.css" />
+
+    <!-- Scripts -->
+    <script src="scripts/products.js"></script>
+
+</head>
+
+<body class="background-404040">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top background-171717">
+
+        <!-- Navbar Brand -->
+        <a class="navbar-brand" href="#">
+            <img src="sources/images/logo/white_logo.png" width="" height="82" alt="">
+        </a>
+
+        <!-- Navbar Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+
+                <!-- Home -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+
+                <!-- Filosofy -->
+                <li class="nav-item">
+                    <a class="nav-link" href="filosofy.html">Filosofia</a>
+                </li>
+
+                <!-- Products -->
+                <li class="nav-item active dropdown">
+
+                    <a class="nav-link" href="#" data-toggle="dropdown">
+                        Productos </span> <i class="fa fa-caret-down"></i>
+                    </a>
+
+                    <!-- Products content -->
+                    <div id="products-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="products.html#index">Indice de Productos</a>
+                        <a class="dropdown-item" href="products.html#a1">A-1 Amplificador</a>
+                        <a class="dropdown-item" href="products.html#p1">P-1 Selector / Preamplificador</a>
+                        <a class="dropdown-item" href="products.html#b1">B-1 Fuente alimentación a bateria</a>
+                    </div>
+
+                </li>
+
+                <!-- Contactus -->
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">Contactanos</a>
+                </li>
+
+                <!-- FAQ -->
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                </li>
+
+                <!-- Gallery -->
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Galeria</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- Page content -->
+    <div id="page-content">
+        <div class="container">
+
+            <!-- Title -->
+            <div class="row py-5">
+                <div class="col-12">
+                    <div class="d-flex align-items-center justify-content-center">
+
+                        <h1 class="color-E5E5E5"> Nuestros productos : </h1>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Index Cards only visible on XL sreens -->
+            <div id="products-index-cards" class="row">
+
+            </div>
+
+            <!-- Indes text visible on the rest screens -->
+            <div class="row">
+                <div class="col-12 pb-3 d-xl-none">
+                    <ul id="products-index-list" class="list-group">
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Product
+            <div class="background-171717 mb-5">
+
+                Title
+                <div class="row py-4">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <h2 class="color-E5E5E5">
+                                Nombre del producto
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                Content
+                <div class="row">
+
+                    Left
+                    <div class="col-lg-6 col-md-12 pr-lg-0">
+
+                        Carousel
+                        <div class="row">
+                            <div class="col-12">
+                                <div id="carousel" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carousel" data-slide-to="1"></li>
+                                        <li data-target="#carousel" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100" src="sources/images/gallery/first.jpg" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="sources/images/gallery/second.jpg" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="sources/images/gallery/third.jpg" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        Features only visible lg and up
+                        <div class="row py-1 d-none d-lg-block">
+                            <div class="col-12">
+                                <h4 class="color-E5E5E5 description">
+                                    Especificaciones :
+                                </h4>
+                                <p class="color-BFBFBF justify description">
+                                    Especificacion 1
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    Right
+                    <div class="col-lg-6 col-md-12 pl-lg-0">
+
+                        Description
+                        <div class="row py-1">
+                            <div class="col-12">
+                                <h4 class="color-E5E5E5 description">
+                                    Descripción :
+                                </h4>
+                                <p class="color-BFBFBF justify description">
+                                    Parrafi 1
+                                </p>
+                            </div>
+                        </div>
+
+                        Features only visible md and down
+                        <div class="row py-1 d-lg-none">
+                            <div class="col-12">
+                                <h4 class="color-E5E5E5 description">
+                                    Especificaciones :
+                                </h4>
+                                <p class="color-BFBFBF justify description">
+                                    Especificacion 1
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div> -->
+
+            <!-- Product A-1 -->
+            <div id="a1" class="background-171717 mb-5">
+
+                <!-- Title-->
+                <div class="row py-5">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <h2 class="color-E5E5E5">
+                                A-1 Amplificador
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="row">
+
+                    <!-- Left -->
+                    <div class="col-lg-6 col-md-12 pr-lg-0">
+
+                        <!-- Carousel -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div id="carousel-a1" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carousel" data-slide-to="1"></li>
+                                        <li data-target="#carousel" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100" src="sources/images/gallery/a1-first.jpg" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="sources/images/gallery/a1-second.jpg" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="sources/images/gallery/a1-third.jpg" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carousel-a1" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carousel-a1" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Features only visible lg and up -->
+                        <div class="row py-1 d-none d-lg-block">
+                            <div class="col-12">
+
+                                <h4 class="color-E5E5E5 description">
+                                    Especificaciones :
+                                </h4>
+                                <p class="color-BFBFBF justify description">
+                                    Potencia : 2x15 w @ 4 ohms (thd 10%) / 2x9 w @ 8 ohms (thd 1%)
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Eficiencia : 88% (9w @ 8 ohms)
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Entradas : 1 entrada (Izquieda / Derecha)
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Medidas : 30 x 28 x 6cm
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Peso : 1,5Kg
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Alimentación : 12v (2A min)
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Right -->
+                    <div class="col-lg-6 col-md-12 pl-lg-0">
+
+                        <!-- Description -->
+                        <div class="row py-1">
+                            <div class="col-12">
+                                <h4 class="color-E5E5E5 description">
+                                    Descripción :
+                                </h4>
+                                <p class="color-BFBFBF justify description">
+                                    El A1 es nuestro amplificador integrado básico. Posee una sola entrada asociada a
+                                    un control de volumen de origen ALPS está y basado en la tecnología de
+                                    amplificación clase D. Construido alrededor de un chip Tripath TA2024, proporciona
+                                    2x15 watts @ 4 omhs y 9x2 watts @ 8 ohms.
+                                </p>
+
+                                <p class="color-BFBFBF justify description">
+                                    Hemos incluido componentes de alta calidad como condensadores de entrada mkp y
+                                    condensadores de alimentación Panasonic así como conectores de entrada y salida
+                                    chapados en oro para perdurar en el tiempo.
+                                </p>
+
+                                <p class="color-BFBFBF justify description">
+                                    Como resultado el A1 ofrece una reproducción suave y relajada pero tambien es capaz
+                                    de llenar una habitación de tamaño medio con sonido potente y de alta calidad a
+                                    partir de altavoces con una eficiencia media/alta (>89db).
+                                </p>
+
+                                <p class="color-BFBFBF justify description">
+                                    Como todos nuestros componentes, el A1 funciona a 12v y puede ser alimentado con un
+                                    adaptador de corriente (2A mínimo) o a partir de baterías (como nuestra B1) gracias
+                                    a un eficacia energética cercana al 90% con lo que esto supone en térmínos de
+                                    ahorro y de respeto por el medio ambiente.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Features only visible md and down -->
+                        <div class="row py-1 d-lg-none">
+                            <div class="col-12">
+                                <h4 class="color-E5E5E5 description">
+                                    Especificaciones :
+                                </h4>
+                                <p class="color-E5E5E5 justify description">
+                                    Potencia : 2x15 w @ 4 ohms (thd 10%) / 2x9 w @ 8 ohms (thd 1%)
+                                </p>
+                                <p class="color-E5E5E5 justify description">
+                                    Eficiencia : 88% (9w @ 8 ohms)
+                                </p>
+                                <p class="color-E5E5E5 justify description">
+                                    Entradas : 1 entrada (Izquieda / Derecha)
+                                </p>
+                                <p class="color-E5E5E5 justify description">Medidas : 30 x 28 x 6cm
+                                </p>
+                                <p class="color-E5E5E5 justify description">
+                                    Peso : 1,5Kg
+                                </p>
+                                <p class="color-E5E5E5 justify description">
+                                    Alimentación : 12v (2A min)
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Product P-1 -->
+            <div id="p1" class="background-171717 mb-5">
+
+                <!-- Title md and up-->
+                <div class="row py-5 d-none d-md-block">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <h2 class="color-E5E5E5">
+                                P-1 Selector / Preamplificador
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Title sm -->
+                <div class="row py-5 d-none d-sm-block d-md-none">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <h2 class="color-E5E5E5">
+                                P-1
+                            </h2>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <h2 class="color-E5E5E5">
+                                Selector / Preamplificador
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Title xs -->
+                <div class="row py-5 d-block d-sm-none">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <h2 class="color-E5E5E5">
+                                P-1 Selector /
+                            </h2>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <h2 class="color-E5E5E5">
+                                Preamplificador
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="row">
+
+                    <!-- Left -->
+                    <div class="col-lg-6 col-md-12 pr-lg-0">
+
+                        <!-- Carousel -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div id="carousel-p1" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carousel" data-slide-to="1"></li>
+                                        <li data-target="#carousel" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100" src="sources/images/gallery/p1-first.jpg" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="sources/images/gallery/p1-second.jpg" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="sources/images/gallery/p1-third.jpg" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carousel-p1" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carousel-p1" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Features only visible lg and up -->
+                        <div class="row py-1 d-none d-lg-block">
+                            <div class="col-12">
+                                <h4 class="color-E5E5E5 description">
+                                    Especificaciones :
+                                </h4>
+                                <p class="color-BFBFBF justify description">
+                                    Número de entradas : 3 stereo (Izquieda / Derecha)
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Salidas : 1 stereo (Izquieda / Derecha)
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Nivel de ganancia : x5
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Consumo : 600mA
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Alimentación : 12v (1A recomendado)
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Dimensiones : 30 x 28 x 6cm
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Peso : 1,3kg
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Right -->
+                    <div class="col-lg-6 col-md-12 pl-lg-0">
+
+                        <!-- Description -->
+                        <div class="row py-1">
+                            <div class="col-12">
+                                <h4 class="color-E5E5E5 description">
+                                    Descripción :
+                                </h4>
+                                <p class="color-BFBFBF justify description">
+                                    Para aquellos que necesitan conectar más de una fuente el P1 proporciona 3 entradas
+                                    seleccionables mediante un conmutador rotativo de alta calidad además incluye un
+                                    preamplificador basado en amplificadores operacionales seleccionados por su buen
+                                    desempeño en el manejo de señales de audio, lo que permite conectar fuentes con
+                                    bajo nivel de salida como smartphones, tablets o reproductores MP3.
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    También se incluyen, como en el resto de la gama, conectores dorados pies
+                                    antiresonantes y un adaptador para su alimentación.
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    EL P1 se puede alimentar tambien a partir de baterías (recomendamos nuestro B1) ya
+                                    que funciona a 12v como el amplificador A1.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Features only visible md and down -->
+                        <div class="row py-1 d-lg-none">
+
+                            <div class="col-12">
+                                <h4 class="color-E5E5E5 description">
+                                    Especificaciones :
+                                </h4>
+                                <p class="color-BFBFBF justify description">
+                                    Número de entradas : 3 stereo (izq/dcha)
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Salidas : 1 stereo (izq/dcha)
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Nivel de ganancia : x5
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Consumo : 600mA
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Alimentación : 12v (1A recomendado)
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Dimensiones : 30 x 28 x 6cm
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Peso : 1,3kg
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Product B-1 -->
+            <div id="b1" class="background-171717 mb-5">
+
+                <!-- Title md and up-->
+                <div class="row py-5 d-none d-md-block">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <h2 class="color-E5E5E5">
+                                B-1 Fuente de alimentación a baterías
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Title sm -->
+                <div class="row py-5 d-none d-sm-block d-md-none">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <h2 class="color-E5E5E5">
+                                B-1
+                            </h2>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <h2 class="color-E5E5E5">
+                                Fuente de alimentación a baterías
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Title xs -->
+                <div class="row py-5 d-block d-sm-none">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <h2 class="color-E5E5E5">
+                                B-1 Fuente de
+                            </h2>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <h2 class="color-E5E5E5">
+                                alimentación a baterías
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="row">
+
+                    <!-- Left -->
+                    <div class="col-lg-6 col-md-12 pr-lg-0">
+
+                        <!-- Carousel -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div id="carousel-b1" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carousel" data-slide-to="1"></li>
+                                        <li data-target="#carousel" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100" src="sources/images/gallery/b1-first.jpg" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="sources/images/gallery/a1-second.jpg" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="sources/images/gallery/b1-second.jpg" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carousel-b1" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carousel-b1" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Features only visible lg and up -->
+                        <div class="row py-1 d-none d-lg-block">
+                            <div class="col-12">
+                                <h4 class="color-E5E5E5 description">
+                                    Especificaciones :
+                                </h4>
+                                <p class="color-BFBFBF justify description">
+                                    Tipo : Batería SLA (Plomo / Ácido sellada)
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Capacidad : 4000 mAh
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Número de salidas : 2
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Tiempo de uso : De 6 a 8 horas con el amplificador A1 (*)
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Cargador: Cargador de baterías de plomo con carga y desconexión automática
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Dimensiones : 30 x 25 x 6cm
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Peso : 3,3kg
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Right -->
+                    <div class="col-lg-6 col-md-12 pl-lg-0">
+
+                        <!-- Description -->
+                        <div class="row py-1">
+                            <div class="col-12">
+                                <h4 class="color-E5E5E5 description">
+                                    Descripción :
+                                </h4>
+                                <p class="color-BFBFBF justify description">
+                                    El B1 es una fuente de alimentación basada en baterías SLA capaz de alimentar 2
+                                    componentes simultáneamente. Incluye un conmutador de carga y se suministra con un
+                                    cargador inteligente. incorpora un circuito para proteger a las baterías de una
+                                    descarga excesiva, cuando detecta un voltaje demasido bajo el B1 pasa al estado de
+                                    reposo lo que nos indica que es el momento de cargar las baterías.
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    El B1 permite al amplificador A1 un funcionamiento aproximado de 8 horas un nivel
+                                    de volumen suficiente para llenar de música una habitación de tamaño mediano. Con
+                                    una vida media de unos 500 ciclos de carga, las baterías pueden ser fácilmente
+                                    cambiadas por el usuario (cada 2 años aproximadamente dependiendo del uso).
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    El B1 comparte el diseño minimalista y elegante del amplificador A1 y el
+                                    previo/selector P1 formando los tres un sistema de sonido alta calidad y con una
+                                    integración fantástica en un entorno doméstico actual.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Features only visible md and down -->
+                        <div class="row py-1 d-lg-none">
+                            <div class="col-12">
+                                <h4 class="color-E5E5E5 description">
+                                    Especificaciones :
+                                </h4>
+                                <p class="color-BFBFBF justify description">
+                                    Tipo : Batería SLA (Plomo / Ácido sellada)
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Capacidad : 4000 mAh
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Número de salidas : 2
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Tiempo de uso : De 6 a 8 horas con el amplificador A1 (*)
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Cargador: Cargador de baterías de plomo con carga y desconexión automática
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Dimensiones : 30 x 25 x 6cm
+                                </p>
+                                <p class="color-BFBFBF justify description">
+                                    Peso : 3,3kg
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer font-small">
+
+        <!-- Footer Elements -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 py-4">
+                    <div class="d-flex align-items-center justify-content-center">
+
+                        <!-- Twitter -->
+                        <div class="d-flex align-items-center justify-content-end">
+                            <a href="#" id="social-network-twitter" class="social-network d-flex align-items-center justify-content-center">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+
+                        <!-- Facebook -->
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a href="#" id="social-network-facebook" class="social-network d-flex align-items-center justify-content-center">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <!--Instagram-->
+                        <div class="d-flex align-items-center justify-content-start">
+
+                            <a href="#" id="social-network-instagram" class="social-network d-flex align-items-center justify-content-center">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Elements -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center pb-2">
+            © 2018 | Todos los derechos reservados.
+        </div>
+        <div class="footer-copyright text-center pb-4">
+            <b> Shelf-fi Audio</b>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+
+</body>
+
+</html>

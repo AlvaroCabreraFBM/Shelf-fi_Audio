@@ -1,0 +1,43 @@
+.social-network {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0px 10px 0px 10px;
+    color:#FFFFFF;
+    font-size: 125%;
+    text-decoration: none !important;
+}
+
+#social-network-twitter {
+    background-color: #1DA1F2;
+}
+
+#social-network-facebook {
+    background-color: #4267B2;
+}
+
+#social-network-instagram {
+    background-color: #E53E53;
+}
+
+#social-network-instagram {
+    font-size: 135%; 
+}
+
+#social-network-twitter:hover {
+    background-color: #116193;
+    color: #9B9B9B;
+
+}
+
+#social-network-facebook:hover {
+    background-color: #283E6C;
+    color: #9B9B9B;
+
+}
+
+#social-network-instagram:hover {
+    background-color: #8B2532;
+    color: #9B9B9B;
+
+}

@@ -1,0 +1,109 @@
+/* Colors  */
+/* #171717 */
+/* #404040 */
+/* #7F7F7F */
+/* #BFBFBF */
+/* #E5E5E5 */
+/* #FFFFFF */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar-brand {
+    margin: 0px 20px 0px 0px;
+}
+
+.navbar {
+    background-color: #171717;
+}
+
+.nav-item {
+    margin: 0px 10px 0px 10px;
+}
+
+.active {
+    color: #E5E5E5 !important;
+}
+
+.nav-link {
+    color: #BFBFBF !important;
+}
+
+.nav-link:hover {
+    color: #E5E5E5 !important;
+}
+
+#products-dropdown {
+    background-color: #171717;
+    border-radius: 0;
+    border: 0;
+}
+
+.dropdown-item {
+    background-color: #171717;
+    color: #BFBFBF !important;
+}
+
+.dropdown-item:hover {
+    background-color: #171717;
+    color: #E5E5E5 !important;
+}
+
+/* Page Content */
+#page-content {
+    padding: 108px 0px 0px 0px;
+}
+
+/* Footer */
+.footer {
+    background-color: #171717;
+    color: #BFBFBF;
+}
+
+/* Other */
+.color-E5E5E5 {
+    color: #E5E5E5;
+}
+
+.color-BFBFBF {
+    color: #BFBFBF;
+}
+
+.hover-color-E5E5E5:hover {
+    color: #E5E5E5 !important;
+}
+
+.hover-color-FFFFFF:hover {
+    color: #FFFFFF !important;
+}
+
+.background-171717 {
+    background-color: #171717;
+}
+
+.background-404040 {
+    background-color: #404040;
+}
+
+.no-rounded-borders {
+    border-radius: 0;
+}
+
+.no-padding-left {
+    padding-left: 0 !important;
+}
+
+.no-padding-right {
+    padding-right: 0 !important;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.text-decoration-none {
+    text-decoration: none !important;
+}
