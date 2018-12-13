@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    var contact;
+    var contact = false;
 
     $("#contactYes").click(function () {
         contact = true;
@@ -9,7 +9,6 @@ $(document).ready(function () {
     $("#contactNo").click(function () {
         contact = false;
     });
-
 
     $("#submit").click(function () {
 
@@ -24,32 +23,24 @@ $(document).ready(function () {
         // var subject = "Mensaje de : " + completeName;
         var finalMesage = (completeName + " te ha enviado el siguiente mensaje : '" + mesage + "'");
 
-        if (contact == true) { 
-            finalMesage += " Puedes contactar con el usando su " + contactMethod + " : "; 
-            contact && contactMethod == "Tel." ? finalMesage += telephone + ".": finalMesage += email + ".";
-        } else { 
-            finalMesage += " Ha solicitado que no se contacte con el. "; 
+        if (contact == true) {
+            finalMesage += " Puedes contactar con el usando su " + contactMethod + " : ";
+            contact && contactMethod == "Tel." ? finalMesage += telephone + "." : finalMesage += email + ".";
+        } else {
+            finalMesage += " Ha solicitado que no se contacte con el. ";
         }
 
         // Nodemailer not works correctly, but you can se the code that allow to send email.
-        // Instead to send the mesage, I put a alert mesage to we can se the correctly fucionality of the form.
-        alert(finalMesage);
-
-        // var conection = nodemailer.createTransport({
-        //     service : "gmail",
-        //     auth:{
-        //         user: "shelf.fi.audio@gmail.com",
-        //         pass: "Shelffiaudio"
-        //     }
-        // });
-
-        // var email = {
-        //     form : completeName,
-        //     to : "shelf.fi.audio@gmail.com",
-        //     subject : subject, 
-        // };
-
-        // conection.sendMail(email);
+        Swal({
+            title: 'Estas a punto de enviar el siguiente mensaje : ',
+            type: 'warning',
+            text: finalMesage,
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Tiene buena pinta! <i class="fa fa-thumbs-up"></i> ',
+            cancelButtonText: '<i class="fa fa-thumbs-down"></i>',
+        });
 
     });
 

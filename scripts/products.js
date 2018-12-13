@@ -46,7 +46,58 @@ $(document).ready(function () {
                 </a>
             </li>
         `
-        
+
     }
+
+    $("#buy1").click(function () {
+        Swal({
+            title: '¿Quieres pasar a la pagina de compra?',
+            type: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si! <i class="fa fa-thumbs-up"></i>',
+            cancelButtonText: '<i class="fa fa-thumbs-down"></i>',
+        }).then((result) => {
+            if (result.value) {
+                // Place holder of buy page, currently is out of service
+                location.href ="http://www.paypal.com";
+            }
+        })
+    });
+
+    $("#buy2").click(function () {
+        Swal({
+            title: '¿Quieres pasar a la pagina de compra?',
+            type: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si! <i class="fa fa-thumbs-up"></i>',
+            cancelButtonText: '<i class="fa fa-thumbs-down"></i>',
+        }).then((result) => {
+            if (result.value) {
+                // Place holder of buy page, currently is out of service
+                location.href ="http://www.paypal.com";
+            }
+        })
+    });
+
+    $("#buy3").click(function () {
+        Swal({
+            title: '¿Quieres pasar a la pagina de compra?',
+            type: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si! <i class="fa fa-thumbs-up"></i>',
+            cancelButtonText: '<i class="fa fa-thumbs-down"></i>',
+        }).then((result) => {
+            if (result.value) {
+                // Place holder of buy page, currently is out of service
+                location.href ="http://www.paypal.com";
+            }
+        })
+    });
 
 });

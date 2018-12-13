@@ -10,7 +10,7 @@
     <!-- Page Info -->
     <title>Shelf-fi Audio</title>
     <meta name="description" content="Estás a punto de descubrir una gama de productos de audio concebidos de manera muy diferente al la mayoría de los productos de la industria audiovisual. Nuestra meta es la música y la reproducción óptima del sonido, si, pero sin olvidar aspectos como la simplicidad, la integración en el entorno domestico, la eficiencia y el respeto por el medio ambiente.">
-    <!-- <link rel="icon" href="sources/images/icons/logo.ico"> -->
+    <link rel="icon" href="sources/images/logo/black_logo.ico"/>
 
     <!-- Share info -->
     <meta property="og:site_name" content="Shelf-fi Audio">
@@ -35,7 +35,8 @@
     <link rel="stylesheet" href="styles/social-networks.css" />
 
     <!-- Scripts -->
-    <script src="node_modules/nodemailer/lib/nodemailer.js"></script>
+    <!-- <script src="node_modules/nodemailer/lib/nodemailer.js"></script> -->
+    <script src="scripts/sweetalert2/sweetalert2.all.js"></script>
     <script src="scripts/contactus.js"></script>
 
 </head>
@@ -116,7 +117,7 @@
                 <div class="col-12">
                     <div class="d-flex align-items-center justify-content-center">
 
-                        <h1 class="color-E5E5E5"> Contacta con nosotros </h1>
+                        <h1 id="title" class="color-E5E5E5"> Contacta con nosotros </h1>
 
                     </div>
                 </div>
@@ -186,7 +187,8 @@
                             <div class="col-6 col-md-2">
                                 <div class="d-flex align-items-center justify-content-center">
                                     <div class="form-radio pt-2">
-                                        <input type="radio" class="form-radio-input" name="approve" id="contactYes" value="">
+                                        <input type="radio" class="form-radio-input" name="approve" id="contactYes"
+                                            value="">
                                         <label class="form-check-label" for="approve">
                                             <p class="color-E5E5E5"><strong>Si</strong></p>
                                         </label>
@@ -197,7 +199,8 @@
                             <div class="col-6 col-md-2">
                                 <div class="d-flex align-items-center justify-content-center">
                                     <div class="form-radio pt-2">
-                                        <input type="radio" class="form-radio-input" name="approve" id="contactNo" value="">
+                                        <input type="radio" class="form-radio-input" name="approve" id="contactNo"
+                                            value="">
                                         <label class="form-check-label" for="approve">
                                             <p class="color-E5E5E5"><strong>No</strong></p>
                                         </label>
@@ -231,18 +234,19 @@
 
                         </div>
 
-                        <!-- Submit -->
-                        <div class="form-group row">
-                            <div class=" col-md-12">
-                                <div class="d-flex align-items-center justify-content-center">
+                    </form>
 
-                                    <button type="submit" id="submit" class="btn btn-primary background-171717 color-E5E5E5 hover-background-101010" style="border-width: 0">Enviar</button>
-
-                                </div>
+                    <!-- Submit -->
+                    <div class=" row my-3">
+                        <div class=" col-md-12">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <button id="submit" class="btn background-171717 color-E5E5E5 hover-background-101010"
+                                    style="border-width: 0">
+                                    Enviar
+                                </button>
                             </div>
                         </div>
-
-                    </form>
+                    </div>
 
 
                 </div>
@@ -261,21 +265,22 @@
 
                         <!-- Twitter -->
                         <div class="d-flex align-items-center justify-content-end">
-                            <a href="#" id="social-network-twitter" class="social-network d-flex align-items-center justify-content-center">
+                            <a href="https://twitter.com/ShelfFi" id="social-network-twitter" class="social-network d-flex align-items-center justify-content-center">
                                 <i class="fab fa-twitter"></i>
                             </a>
                         </div>
 
                         <!-- Facebook -->
                         <div class="d-flex align-items-center justify-content-center">
-                            <a href="#" id="social-network-facebook" class="social-network d-flex align-items-center justify-content-center">
+                            <a href="https://www.facebook.com/Shelf-fi-Audio-345508012900588" id="social-network-facebook"
+                                class="social-network d-flex align-items-center justify-content-center">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
                         </div>
                         <!--Instagram-->
                         <div class="d-flex align-items-center justify-content-start">
 
-                            <a href="#" id="social-network-instagram" class="social-network d-flex align-items-center justify-content-center">
+                            <a href="https://www.instagram.com/shelf.fi.audio/" id="social-network-instagram" class="social-network d-flex align-items-center justify-content-center">
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </div>
@@ -284,7 +289,6 @@
                 </div>
             </div>
         </div>
-        <!-- Footer Elements -->
 
         <!-- Copyright -->
         <div class="footer-copyright text-center pb-2">
@@ -293,7 +297,6 @@
         <div class="footer-copyright text-center pb-4">
             <b> Shelf-fi Audio</b>
         </div>
-        <!-- Copyright -->
 
     </footer>
 

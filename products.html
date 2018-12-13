@@ -10,7 +10,7 @@
     <!-- Page Info -->
     <title>Shelf-fi Audio</title>
     <meta name="description" content="Estás a punto de descubrir una gama de productos de audio concebidos de manera muy diferente al la mayoría de los productos de la industria audiovisual. Nuestra meta es la música y la reproducción óptima del sonido, si, pero sin olvidar aspectos como la simplicidad, la integración en el entorno domestico, la eficiencia y el respeto por el medio ambiente.">
-    <!-- <link rel="icon" href="sources/images/icons/logo.ico"> -->
+    <link rel="icon" href="sources/images/logo/black_logo.ico"/>
 
     <!-- Share info -->
     <meta property="og:site_name" content="Shelf-fi Audio">
@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="styles/products.css" />
 
     <!-- Scripts -->
+    <script src="scripts/sweetalert2/sweetalert2.all.js"></script>
     <script src="scripts/products.js"></script>
 
 </head>
@@ -135,104 +136,6 @@
                     </ul>
                 </div>
             </div>
-
-            <!-- Product
-            <div class="background-171717 mb-5">
-
-                Title
-                <div class="row py-4">
-                    <div class="col-12">
-                        <div class="d-flex align-items-center justify-content-center">
-                            <h2 class="color-E5E5E5">
-                                Nombre del producto
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-
-                Content
-                <div class="row">
-
-                    Left
-                    <div class="col-lg-6 col-md-12 pr-lg-0">
-
-                        Carousel
-                        <div class="row">
-                            <div class="col-12">
-                                <div id="carousel" class="carousel slide" data-ride="carousel">
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                                        <li data-target="#carousel" data-slide-to="1"></li>
-                                        <li data-target="#carousel" data-slide-to="2"></li>
-                                    </ol>
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img class="d-block w-100" src="sources/images/gallery/first.jpg" alt="First slide">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img class="d-block w-100" src="sources/images/gallery/second.jpg" alt="Second slide">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img class="d-block w-100" src="sources/images/gallery/third.jpg" alt="Third slide">
-                                        </div>
-                                    </div>
-                                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        Features only visible lg and up
-                        <div class="row py-1 d-none d-lg-block">
-                            <div class="col-12">
-                                <h4 class="color-E5E5E5 description">
-                                    Especificaciones :
-                                </h4>
-                                <p class="color-BFBFBF justify description">
-                                    Especificacion 1
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    Right
-                    <div class="col-lg-6 col-md-12 pl-lg-0">
-
-                        Description
-                        <div class="row py-1">
-                            <div class="col-12">
-                                <h4 class="color-E5E5E5 description">
-                                    Descripción :
-                                </h4>
-                                <p class="color-BFBFBF justify description">
-                                    Parrafi 1
-                                </p>
-                            </div>
-                        </div>
-
-                        Features only visible md and down
-                        <div class="row py-1 d-lg-none">
-                            <div class="col-12">
-                                <h4 class="color-E5E5E5 description">
-                                    Especificaciones :
-                                </h4>
-                                <p class="color-BFBFBF justify description">
-                                    Especificacion 1
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div> -->
 
             <!-- Product A-1 -->
             <div id="a1" class="background-171717 mb-5">
@@ -369,7 +272,8 @@
                                 <p class="color-E5E5E5 justify description">
                                     Entradas : 1 entrada (Izquieda / Derecha)
                                 </p>
-                                <p class="color-E5E5E5 justify description">Medidas : 30 x 28 x 6cm
+                                <p class="color-E5E5E5 justify description">
+                                    Medidas : 30 x 28 x 6cm
                                 </p>
                                 <p class="color-E5E5E5 justify description">
                                     Peso : 1,5Kg
@@ -377,6 +281,18 @@
                                 <p class="color-E5E5E5 justify description">
                                     Alimentación : 12v (2A min)
                                 </p>
+                            </div>
+                        </div>
+
+                        <!-- Buy -->
+                        <div class="row pb-3">
+                            <div class="col-12">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <button id="buy1" class="btn background-171717 color-E5E5E5 hover-background-101010"
+                                        style="border-width: 0">
+                                        Compralo por : 139€
+                                </button>
+                                </div>
                             </div>
                         </div>
 
@@ -512,9 +428,12 @@
                                     Descripción :
                                 </h4>
                                 <p class="color-BFBFBF justify description">
-                                    Para aquellos que necesitan conectar más de una fuente el P1 proporciona 3 entradas
-                                    seleccionables mediante un conmutador rotativo de alta calidad además incluye un
-                                    preamplificador basado en amplificadores operacionales seleccionados por su buen
+                                    Para aquellos que necesitan conectar más de una fuente el P1 proporciona 3
+                                    entradas
+                                    seleccionables mediante un conmutador rotativo de alta calidad además incluye
+                                    un
+                                    preamplificador basado en amplificadores operacionales seleccionados por su
+                                    buen
                                     desempeño en el manejo de señales de audio, lo que permite conectar fuentes con
                                     bajo nivel de salida como smartphones, tablets o reproductores MP3.
                                 </p>
@@ -523,7 +442,8 @@
                                     antiresonantes y un adaptador para su alimentación.
                                 </p>
                                 <p class="color-BFBFBF justify description">
-                                    EL P1 se puede alimentar tambien a partir de baterías (recomendamos nuestro B1) ya
+                                    EL P1 se puede alimentar tambien a partir de baterías (recomendamos nuestro B1)
+                                    ya
                                     que funciona a 12v como el amplificador A1.
                                 </p>
                             </div>
@@ -558,6 +478,18 @@
                                     Peso : 1,3kg
                                 </p>
 
+                            </div>
+                        </div>
+
+                        <!-- Buy -->
+                        <div class="row pb-3">
+                            <div class="col-12">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <button id="buy2" class="btn background-171717 color-E5E5E5 hover-background-101010"
+                                        style="border-width: 0">
+                                        Compralo por : 139€
+                                </button>
+                                </div>
                             </div>
                         </div>
 
@@ -693,20 +625,25 @@
                                 </h4>
                                 <p class="color-BFBFBF justify description">
                                     El B1 es una fuente de alimentación basada en baterías SLA capaz de alimentar 2
-                                    componentes simultáneamente. Incluye un conmutador de carga y se suministra con un
+                                    componentes simultáneamente. Incluye un conmutador de carga y se suministra con
+                                    un
                                     cargador inteligente. incorpora un circuito para proteger a las baterías de una
-                                    descarga excesiva, cuando detecta un voltaje demasido bajo el B1 pasa al estado de
+                                    descarga excesiva, cuando detecta un voltaje demasido bajo el B1 pasa al estado
+                                    de
                                     reposo lo que nos indica que es el momento de cargar las baterías.
                                 </p>
                                 <p class="color-BFBFBF justify description">
-                                    El B1 permite al amplificador A1 un funcionamiento aproximado de 8 horas un nivel
-                                    de volumen suficiente para llenar de música una habitación de tamaño mediano. Con
+                                    El B1 permite al amplificador A1 un funcionamiento aproximado de 8 horas un
+                                    nivel
+                                    de volumen suficiente para llenar de música una habitación de tamaño mediano.
+                                    Con
                                     una vida media de unos 500 ciclos de carga, las baterías pueden ser fácilmente
                                     cambiadas por el usuario (cada 2 años aproximadamente dependiendo del uso).
                                 </p>
                                 <p class="color-BFBFBF justify description">
                                     El B1 comparte el diseño minimalista y elegante del amplificador A1 y el
-                                    previo/selector P1 formando los tres un sistema de sonido alta calidad y con una
+                                    previo/selector P1 formando los tres un sistema de sonido alta calidad y con
+                                    una
                                     integración fantástica en un entorno doméstico actual.
                                 </p>
                             </div>
@@ -742,6 +679,18 @@
                             </div>
                         </div>
 
+                        <!-- Buy -->
+                        <div class="row pb-3">
+                            <div class="col-12">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <button id="buy3" class="btn background-171717 color-E5E5E5 hover-background-101010"
+                                        style="border-width: 0">
+                                        Compralo por : 139€
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -761,21 +710,21 @@
 
                         <!-- Twitter -->
                         <div class="d-flex align-items-center justify-content-end">
-                            <a href="#" id="social-network-twitter" class="social-network d-flex align-items-center justify-content-center">
+                            <a href="https://twitter.com/ShelfFi" id="social-network-twitter" class="social-network d-flex align-items-center justify-content-center">
                                 <i class="fab fa-twitter"></i>
                             </a>
                         </div>
 
                         <!-- Facebook -->
                         <div class="d-flex align-items-center justify-content-center">
-                            <a href="#" id="social-network-facebook" class="social-network d-flex align-items-center justify-content-center">
+                            <a href="https://www.facebook.com/Shelf-fi-Audio-345508012900588" id="social-network-facebook" class="social-network d-flex align-items-center justify-content-center">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
                         </div>
                         <!--Instagram-->
                         <div class="d-flex align-items-center justify-content-start">
 
-                            <a href="#" id="social-network-instagram" class="social-network d-flex align-items-center justify-content-center">
+                            <a href="https://www.instagram.com/shelf.fi.audio/" id="social-network-instagram" class="social-network d-flex align-items-center justify-content-center">
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </div>
@@ -784,7 +733,6 @@
                 </div>
             </div>
         </div>
-        <!-- Footer Elements -->
 
         <!-- Copyright -->
         <div class="footer-copyright text-center pb-2">
@@ -793,7 +741,6 @@
         <div class="footer-copyright text-center pb-4">
             <b> Shelf-fi Audio</b>
         </div>
-        <!-- Copyright -->
 
     </footer>
 
