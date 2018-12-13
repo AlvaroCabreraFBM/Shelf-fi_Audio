@@ -30,7 +30,6 @@ $(document).ready(function () {
             finalMesage += " Ha solicitado que no se contacte con el. ";
         }
 
-        // Nodemailer not works correctly, but you can se the code that allow to send email.
         Swal({
             title: 'Estas a punto de enviar el siguiente mensaje : ',
             type: 'warning',
@@ -40,6 +39,21 @@ $(document).ready(function () {
             cancelButtonColor: '#d33',
             confirmButtonText: 'Tiene buena pinta! <i class="fa fa-thumbs-up"></i> ',
             cancelButtonText: '<i class="fa fa-thumbs-down"></i>',
+        }).then(function () {
+            // Nodemailer not works correctly, but you can se the code that allow to send email.
+            // var conection = nodemailer.createTransport({
+            //     service : "gmail",
+            //     auth:{
+            //         user: "shelf.fi.audio@gmail.com",
+            //         pass: "Shelffiaudio"
+            //     }
+            // });
+            // var email = {
+            //     form : completeName,
+            //     to : "shelf.fi.audio@gmail.com",
+            //     subject : subject, 
+            // };
+            // conection.sendMail(email);
         });
 
     });

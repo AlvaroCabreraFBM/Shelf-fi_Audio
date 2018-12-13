@@ -1,4 +1,4 @@
-var images = ["a1-first", "second", "third"];
+var images = ["a1-first", "p1-first", "b1-first"];
 var titles = ["A-1 Amplificador", "P-1 Selector / Preamplificador", "B-1 Fuente alimentación a bateria"];
 var links = ["products.html#a1", "products.html#p1", "products.html#b1"];
 
